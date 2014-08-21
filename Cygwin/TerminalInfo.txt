@@ -1,0 +1,9 @@
+Minty Settings ---
+Transparency: Low
+Font: Consolas, 11 point; Show bold as font
+Cursor: Block
+Terminal Type: xterm-256color
+Dimensions (roughly): 95x28
+Background: RGB(253,246,227)
+Foreground: RGB(48,58,71)
+Cursor: RGB(221,162,220)
