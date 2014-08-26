@@ -200,5 +200,5 @@ alias ls='ls -A --color=auto --group-directories-first'
 alias ll='ls -lh'
 LS_COLORS='di=34;1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90:bd=46'
 export LS_COLORS
-export PS1="\e[0;31m[\u@\h \W]\$ \e[m "
+export PS1="\[\033[0;31m\][\u@\h: \w]$\[\033[0m\] "
 export DISPLAY=localhost:0
