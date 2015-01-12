@@ -1,0 +1,10 @@
+BoldAsFont=no
+BackgroundColour=253,246,227
+Term=xterm-256color
+FontHeight=11
+Font=Consolas
+ForegroundColour=0,0,0
+CursorType=block
+Transparency=low
+Columns=95
+Rows=28
