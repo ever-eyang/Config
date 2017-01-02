@@ -1,11 +1,8 @@
 # zsh theme requires 256 color enabled terminal
 # i.e TERM=xterm-256color
-# Preview - http://www.flickr.com/photos/adelcampo/4556482563/sizes/o/
-# based on robbyrussell's shell but louder!
 
-PROMPT='%{$fg_bold[160]%} %F{208}%c%f
-%{$fg_bold[yellow]%}%# %{$reset_color%}'
-RPROMPT='%B%F{160}%n%f%{$fg_bold[190]%}@%F{039}%m%f%{$reset_color%}'
+PROMPT='%F{red}%(!.#.$)%f'
+RPROMPT='%F{yellow}[%?]%f%F{cyan}[%(5~|%-2~/.../%2~|%~)]%f%F{red}[%n@%m]%f'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%F{154}±|%f%F{124}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
