@@ -282,14 +282,14 @@ elseif (has("gui_running") && g:solarized_degrade == 1)
     let s:green       = "#5f8700"
 elseif g:solarized_termcolors != 256 && &t_Co >= 16
     let s:vmode       = "cterm"
-    let s:base03      = "16"
-    let s:base02      = "16"
+    let s:base03      = "8"
+    let s:base02      = "0"
     let s:base01      = "10"
-    let s:base00      = "16"
+    let s:base00      = "11"
     let s:base0       = "12"
-    let s:base1       = "1"
-    let s:base2       = "0"
-    let s:base3       = "0"
+    let s:base1       = "14"
+    let s:base2       = "7"
+    let s:base3       = "15"
     let s:yellow      = "3"
     let s:orange      = "9"
     let s:red         = "1"
@@ -1115,4 +1115,3 @@ autocmd ColorScheme * if g:colors_name != "solarized" | silent! aunmenu Solarize
 "
 " vim:foldmethod=marker:foldlevel=0
 "}}}
-
