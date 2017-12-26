@@ -7,7 +7,7 @@ export ZSH=/home/everdistant/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="ever2"
+ZSH_THEME="ever"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -86,11 +86,18 @@ source $ZSH/oh-my-zsh.sh
 
 eval `dircolors -b ~/.dircolors`
 
-# colored completion - use my LS_COLORS
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
-
 # added by Miniconda3 4.3.14 installer
 export PATH="/opt/miniconda3/bin:$PATH"
 export DISPLAY=:0.0
 
 alias ipython='ipython --profile=ever'
+
+# The following lines were added by compinstall
+
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} 'ma=48;5;13;38;5;230'
+zstyle ':completion:*' menu select=2
+zstyle :compinstall filename '/home/everdistant/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall

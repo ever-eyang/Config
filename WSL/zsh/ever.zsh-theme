@@ -14,7 +14,7 @@ function prompt_virtualenv() {
 }
 
 
-PROMPT='%B%F{160}$(prompt_char)%f %{$reset_color%}'
+PROMPT='%B%F{160}$(prompt_char)%f %{$reset_color%}%b'
 
 RPROMPT='%{$reset_color%}%B%F{111}$(prompt_virtualenv)%f%B%F{163}[%(!.%1~.%~)]%B%F{160}[%n%f%{$fg_bold[black]%}@%F{160}%m%F{160}]%f%{$reset_color%}'
 
@@ -22,4 +22,3 @@ ZSH_THEME_GIT_PROMPT_PREFIX="%F{164}|%f%F{164}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}%BX%b%F{red}|%f%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=" %{$fg[black]%}V%F{154}|"
-
