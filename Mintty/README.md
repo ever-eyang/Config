@@ -1,0 +1,1 @@
+This configuration set is DEPRECATED. Use Windows Terminal rather than Mintty
