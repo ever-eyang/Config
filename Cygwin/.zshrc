@@ -106,3 +106,4 @@ echo -ne  '\eP\e]4;7;#EEE8D5\a'  # white        -> Base2
 echo -ne '\eP\e]4;15;#FDF6E3\a'  # bold white   -> Base3
 
 . "/cygdrive/c/ProgramData/Miniconda3/etc/profile.d/conda.sh"
+conda activate base

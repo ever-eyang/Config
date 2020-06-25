@@ -10,9 +10,8 @@ function prompt_char {
 # Virtualenv: current working virtualenv
 function prompt_virtualenv() {
     [[ -n "$VIRTUAL_ENV" ]] && echo '['`basename "$VIRTUAL_ENV"`']'
-	[[ -n "$CONDA_PREFIX" ]] && echo '['`basename "$CONDA_PREFIX" | tr -d '\r'`']'
+        [[ ! "$CONDA_DEFAULT_ENV" = "base" ]] && echo '['`basename "$CONDA_DEFAULT_ENV" | tr -d '\r'`']'
 }
-
 
 PROMPT='%B%F{160}$(prompt_char)%f %{$reset_color%}%b'
 
