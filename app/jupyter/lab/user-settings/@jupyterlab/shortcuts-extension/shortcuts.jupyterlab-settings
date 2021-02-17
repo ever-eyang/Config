@@ -1,0 +1,11 @@
+{
+    "shortcuts" : [
+        {
+            "command": "notebook:clear-cell-output",
+            "keys" : [
+                "Alt L"
+            ],
+            "selector" : "body"
+        }
+    ]
+}
